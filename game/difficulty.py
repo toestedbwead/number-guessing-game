@@ -1,0 +1,5 @@
+# game difficulty 
+EASY_CHANCES = 10
+MEDIUM_CHANCES = 5
+HARD_CHANCES = 3
+
