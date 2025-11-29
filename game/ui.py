@@ -1,4 +1,8 @@
+"""
+User interface module for Number Guessing Game.
 
+Handles all user interaction including input, validation, and display messages.
+"""
 # displays at the start of the game
 def welcome_message():
 
@@ -26,7 +30,7 @@ def get_difficulty():
         else:
             print("Invalid! Please enter 1,2 or 3")
 
-
+# gets user guess and makes sure it's 1-100 and a number
 def get_guess():
     while True:
         user_input = input("Enter your guess: ")
@@ -41,10 +45,23 @@ def get_guess():
             print("Please enter a valid number!")
 
 
-def correct_guess():
-    print("Correct! You got it in {number of tries}! Would you like to play again?")
+def display_game_start(difficulty, min_range, max_range):
+    print(f"Great! I'm thinking of a number between {min_range} and {max_range}. Your difficulty is: {difficulty}")
 
-get_guess()
+def display_too_high():
+    print("Too high! Try again.")
+
+def display_too_low():
+    print("Too low! Try again.")
+
+def display_attempts_left(attempts):
+    print(f"You have {attempts} attempts remaining.")
+
+def display_win(attempts):
+    print(f"You win! You finally got it at {attempts} attempts.")
+
+def display_lost(target_number):
+    print(f"You lose. The number was {target_number}. You'll get it next time.")
 
 
 
