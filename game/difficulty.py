@@ -1,5 +1,23 @@
-# game difficulty 
-EASY_CHANCES = 10
-MEDIUM_CHANCES = 5
-HARD_CHANCES = 3
+'''
+Game Difficulty Configuration
+
+Defines chances for each difficulty
+''' 
+
+
+DIFFICULTIES = {
+    "easy": {
+        "chances": 10,
+        "range": (1,100)
+    },
+    "medium": {
+        "chances": 5,
+        "range": (1,100)
+    },
+    "hard": {
+        "chances": 3,
+        "range": (1,100)
+    }
+}
+
 
